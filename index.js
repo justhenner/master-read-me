@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown");
 const fileName = "README.md";
 
 // TODO: Create an array of questions for user input
@@ -52,12 +52,12 @@ const questions = [
         {
             type: 'input',
             message: 'insert github username',
-            name: 'questions',
+            name: 'userName',
         },
         {
             type: 'input',
             message: 'insert email address',
-            name: 'questions',
+            name: 'email',
         }
     ];
 
@@ -66,13 +66,10 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 const repoNameStr = generateMarkdown(data)
-fs.writeFile('fileName', repoNamesStr, function(err) {
-    if (err) {
-        throw err;
-    }
-
-    console.log('Saved ${repoNames.length} repos');
-    });
+fs.writeFile('fileName', repoNameStr, function(err){
+    if (err) throw err; 
+        console.log("success!")
+    })
 }
     // file written successfully
 

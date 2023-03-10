@@ -1,23 +1,14 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^8.2.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/justhenner/master-read-me.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/justhenner/master-read-me/issues"
-  },
-  "homepage": "https://github.com/justhenner/master-read-me#readme"
+  }
 }
